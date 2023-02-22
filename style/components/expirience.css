@@ -1,0 +1,242 @@
+
+.expirience{
+    width: 100%;
+    background-color: #f5f6f7;
+    padding: 80px 0 40px;
+}
+
+.expirience_top{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.expirience_top h2{
+    font-size: 42px;
+    font-weight: #121212;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.expirience_top span{
+    background-color: #fc6f5c;;
+    margin-left: -5px;
+    padding: 0px 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.expirience_top p{
+    font-size: 15px;
+    color: #454545;
+}
+
+.expirience_bottom{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.expirience_bottom_item{
+    margin: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exp_bot_child{
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.exp_content{
+    margin: 0 15px;
+    padding: 20px;
+    border: 1px solid rgba(173, 181, 189, 0.4);
+    border-radius: 5px;
+}
+
+.date{
+    font-size: 16px;
+    color: #121212;
+    line-height: 36px;
+    padding: 0 15px;
+    margin: 0 15px 10px 0;
+}
+
+.name_content{
+    font-size: 18px;
+    color: #121212;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.exp_content p{
+    font-size: 14px;
+    color: #454545;
+    line-height: 2;
+}
+
+.date_left{
+    text-align: end;
+    position: relative;
+}
+
+.date_right{
+    margin-top: 70px;
+    display: flex;
+    position: relative;
+}
+
+.exp_content_left{
+    text-align: end;
+}
+
+.exp_bot_child_right{
+    border-left: 2px solid #fc6f5c;
+}
+
+.orange_line_circle{
+    height: 50%;
+    position: relative;
+}
+
+.date_right::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fc6f5c;
+    border-radius: 100%;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: -27px;
+}
+
+.date_right::after{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #fc6f5c;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+}
+
+.date_left::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fc6f5c;
+    border-radius: 100%;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -40px;
+}
+    
+.date_left::after{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #fc6f5c;
+    position: absolute;
+    top: 50%;
+    right: -30px;
+}
+
+.exp_content_left{
+    position: relative;
+}
+
+.exp_content_left::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #f5f6f7;
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    transform: rotate(45deg);
+    border-color: #f5f6f7 transparent transparent #f5f6f7;
+    box-shadow: -3px -3px 1px -2px rgb(173 181 189 / 40%);
+}
+
+.exp_content_right{
+    position: relative;
+}
+
+.exp_content_right::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #f5f6f7;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    transform: rotate(45deg);
+    border-color: #f5f6f7 transparent transparent #f5f6f7;
+    box-shadow: -3px -3px 1px -2px rgb(173 181 189 / 40%);
+}
+
+@media(max-width:1200px){
+    .expirience_bottom{
+        width: 80%;
+    }
+}
+
+@media(max-width:900px){
+    .expirience_bottom_item{
+        flex-wrap: wrap;
+    }
+    .exp_bot_child{
+        max-width: 100%;
+    }
+    .exp_bot_child_right{
+        border: none;
+    }
+    .date_left::before,
+    .date_left::after,
+    .date_right::before,
+    .date_right::after{
+        display: none;
+    }
+    .date{
+        margin-top: 30px;
+        display: block;
+        text-align: center;
+    }
+    .exp_content{
+        text-align: center;
+    }
+    .expirience_top p{
+        text-align: center;
+    }
+}
+
+@media(max-width:500px){
+    .expirience_top h2, .expirience_top span{
+        font-size: 30px;
+    }
+    .expirience_top p{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .expirience_top{
+        margin-bottom: 0;
+    }
+    .expirience_bottom{
+        width: 100%;
+    }
+    .exp_bot_child{
+        padding: 0;
+    }
+}
+
+@media(max-width:500px){
+    .expirience_top h2, .expirience_top span{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,43 @@
+.end{
+    width: 100%;
+    background-color: #333;
+    padding: 50px 0 80px;
+}
+
+.logo_text{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.logo_text img{
+    width: fit-content;
+}
+
+.logo_text p{
+    line-height: 2;
+    color: #ccc;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo_text span{
+    color: #fff;
+}
+
+.logo_text .orange_span{
+    color: #fc6f5c;
+}
+
+@media(max-width:950px){
+    .logo_text span{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .logo_text p{
+        display: none;
+    }
+}

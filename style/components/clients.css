@@ -1,0 +1,37 @@
+.clients{
+    background-color: #f5f6f7;
+    padding: 80px 0;
+}
+
+.clients_content{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.clients_content_images{
+    display: flex;
+}
+
+.clients_content_images img{
+    width: 100%;
+}
+
+@media(max-width:1400px){
+    
+}
+
+@media(max-width:1200px){
+
+}
+
+@media(max-width:800px){
+    .clients{
+        padding: 30px 0;
+    }
+}
+
+@media(max-width:500px){
+    .clients{
+        padding: 0;
+    }
+}
